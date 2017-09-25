@@ -1,5 +1,6 @@
 require 'octokit'
 require 'dotenv'
+require 'json'
 
 Dotenv.load
 
@@ -8,4 +9,7 @@ client = Octokit::Client.new(
 )
 
 user = Octokit.user 'anastassia-b'
-p user
+
+user_json = user.to_h.to_json
+
+File.write('data/testing.json', user_json)
