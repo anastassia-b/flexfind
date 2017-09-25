@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from './home.jsx';
+import Students from './students';
+import Repos from './repositories';
 
+const studentRepos = require('../../data/sample_george.json');
 const students = require('../../data/students.json');
 
 const Root = () => (
   <div>
     <h1>Flex Find</h1>
-    <Home students={students}/>
+    <Repos studentRepos={studentRepos} />
+    <Students students={students}/>
   </div>
 );
 
