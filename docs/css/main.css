@@ -19,3 +19,16 @@ span, article, footer, time, small {
   box-sizing: inherit;
   background: transparent;
 }
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
