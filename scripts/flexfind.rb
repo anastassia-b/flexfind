@@ -22,6 +22,4 @@ students.each do |student|
   students_data[student] = user.to_h
 end
 
-File.write('data/students.json', students_data.to_json)
-
-# TODO: need to do with students2.txt, but exceeded API request rate limit.
+File.write('data/students.json', students_data.to_json) 
