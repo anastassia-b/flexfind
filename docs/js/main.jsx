@@ -9,7 +9,7 @@ const students = require('../../data/students.json');
 const sampleContribs = require('../../data/sample_george_contributors.json');
 
 const Root = () => (
-  <div>
+  <div className="body-container">
     <h1>Flex Find</h1>
     <Repos studentRepos={studentRepos} />
     <Contributors sampleContribs={sampleContribs}/>

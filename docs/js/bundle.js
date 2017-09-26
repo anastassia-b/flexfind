@@ -9779,7 +9779,7 @@ var sampleContribs = __webpack_require__(189);
 var Root = function Root() {
   return _react2.default.createElement(
     'div',
-    null,
+    { className: 'body-container' },
     _react2.default.createElement(
       'h1',
       null,
@@ -22473,15 +22473,18 @@ var Students = function (_React$Component) {
           _react2.default.createElement(
             "ul",
             null,
-            Object.keys(students[student]).map(function (key, idx2) {
-              return _react2.default.createElement(
-                "li",
-                { key: idx2 + "data" },
-                key,
-                ": ",
-                students[student][key]
-              );
-            })
+            _react2.default.createElement(
+              "li",
+              { key: idx + "login" },
+              "username: ",
+              students[student]["login"]
+            ),
+            _react2.default.createElement(
+              "li",
+              { key: idx + "repos" },
+              "public_repos: ",
+              students[student]["public_repos"]
+            )
           )
         );
       });

@@ -22,6 +22,8 @@ span, article, footer, time, small {
 
 h1 {
   font-size: 48px;
+  text-align: center;
+  padding: 20px;
 }
 
 h2 {
@@ -31,4 +33,8 @@ h2 {
 h3 {
   font-size: 18px;
   font-weight: bold;
+}
+
+.body-container {
+  margin: 30px;
 }

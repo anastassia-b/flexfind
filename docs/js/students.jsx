@@ -12,11 +12,8 @@ class Students extends React.Component {
       <div className="student-info-container">
         <h3 key={idx + "student"}>{students[student].name}</h3>
         <ul>
-        {
-          Object.keys(students[student]).map((key, idx2) => (
-            <li key={idx2 + "data"}>{key}: {students[student][key]}</li>
-          ))
-        }
+          <li key={idx + "login"}>username: {students[student]["login"]}</li>
+          <li key={idx + "repos"}>public_repos: {students[student]["public_repos"]}</li>
         </ul>
       </div>
     ));
