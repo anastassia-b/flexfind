@@ -9785,8 +9785,6 @@ var Root = function Root() {
       null,
       'Flex Find'
     ),
-    _react2.default.createElement(_repositories2.default, { studentRepos: studentRepos }),
-    _react2.default.createElement(_contributors2.default, { sampleContribs: sampleContribs }),
     _react2.default.createElement(_students2.default, { students: students })
   );
 };
@@ -9795,6 +9793,9 @@ document.addEventListener('DOMContentLoaded', function () {
   var root = document.getElementById('root');
   _reactDom2.default.render(_react2.default.createElement(Root, null), root);
 });
+
+// <Repos studentRepos={studentRepos} />
+// <Contributors sampleContribs={sampleContribs}/>
 
 /***/ }),
 /* 83 */
@@ -22466,9 +22467,13 @@ var Students = function (_React$Component) {
           "div",
           { className: "student-info-container" },
           _react2.default.createElement(
-            "h3",
-            { key: idx + "student" },
-            students[student].name
+            "a",
+            { href: "" + students[student].html_url },
+            _react2.default.createElement(
+              "h3",
+              { key: idx + "student" },
+              students[student].name
+            )
           ),
           _react2.default.createElement(
             "div",
@@ -22488,6 +22493,11 @@ var Students = function (_React$Component) {
                 { key: idx + "repos" },
                 "public_repos: ",
                 students[student]["public_repos"]
+              ),
+              _react2.default.createElement(
+                "li",
+                { key: idx + "bio" },
+                students[student]["bio"]
               )
             )
           )

@@ -11,8 +11,7 @@ const sampleContribs = require('../../data/sample_george_contributors.json');
 const Root = () => (
   <div className="body-container">
     <h1>Flex Find</h1>
-    <Repos studentRepos={studentRepos} />
-    <Contributors sampleContribs={sampleContribs}/>
+
     <Students students={students}/>
   </div>
 );
@@ -21,3 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById('root');
   ReactDOM.render(<Root />, root);
 });
+
+// <Repos studentRepos={studentRepos} />
+// <Contributors sampleContribs={sampleContribs}/>
