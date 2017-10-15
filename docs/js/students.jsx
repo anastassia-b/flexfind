@@ -11,10 +11,13 @@ class Students extends React.Component {
     const names = studentAccounts.map((student, idx) => (
       <div className="student-info-container">
         <h3 key={idx + "student"}>{students[student].name}</h3>
-        <ul>
-          <li key={idx + "login"}>username: {students[student]["login"]}</li>
-          <li key={idx + "repos"}>public_repos: {students[student]["public_repos"]}</li>
-        </ul>
+        <div className="student-container">
+          <img className="avatar" src={students[student].avatar_url}/>
+          <ul>
+            <li key={idx + "login"}>username: {students[student]["login"]}</li>
+            <li key={idx + "repos"}>public_repos: {students[student]["public_repos"]}</li>
+          </ul>
+        </div>
       </div>
     ));
 

@@ -20,6 +20,10 @@ span, article, footer, time, small {
   background: transparent;
 }
 
+body {
+  background-color: lightgrey;
+}
+
 h1 {
   font-size: 48px;
   text-align: center;
@@ -37,4 +41,16 @@ h3 {
 
 .body-container {
   margin: 30px;
+  padding: 20px;
+  background-color: white;
+}
+
+.student-container {
+  display: flex;
+  max-height: 300px;
+}
+
+.avatar {
+  width:  120px;
+  height: 120px;
 }
