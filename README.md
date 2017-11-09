@@ -1,5 +1,6 @@
 # FlexFind
 
+It's a work-in-progress:
 [View Flex Projects](https://anastassia-b.github.io/flexfind/)
 
 ### Background
